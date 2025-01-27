@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle sun2;
+    private Triangle mouth;
     private boolean drawn;
 
     /**
@@ -28,6 +29,7 @@ public class Picture
         roof = new Triangle();  
         sun = new Circle();
         sun2 = new Circle();
+        mouth = new Triangle();
         drawn = false;
     }
 
@@ -63,6 +65,12 @@ public class Picture
             sun2.moveHorizontal(-200);
             sun2.moveVertical(-70);
             sun2.makeVisible();
+            
+            mouth.changeColor("black");
+            mouth.moveHorizontal(160);
+            mouth.moveVertical(-50);
+            mouth.makeVisible();
+            
             drawn = true;
         }
     }
