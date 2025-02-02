@@ -96,21 +96,64 @@ public class Picture
         if(!drawn) {
     
             pacBody.changeColor("yellow");
-            pacBody.moveHorizontal(100);
+            pacBody.moveHorizontal(175);
             pacBody.moveVertical(-40);
             pacBody.changeSize(80);
             pacBody.makeVisible();
             
             pacMouth.changeColor("black");
-            pacMouth.moveHorizontal(160);
+            pacMouth.moveHorizontal(235);
             pacMouth.moveVertical(-50);
             pacMouth.makeVisible();
             
             pellet1.makeVisible();
             pellet1.changeColor("white");
             pellet1.changeSize(10);
-            pellet1.moveHorizontal(160);
-            pellet1.moveVertical(-80);
+            pellet1.moveHorizontal(130);
+            pellet1.moveVertical(15);
+            
+            pellet2.makeVisible();
+            pellet2.changeColor("white");
+            pellet2.changeSize(10);
+            pellet2.moveHorizontal(130);
+            pellet2.moveVertical(60);
+            
+            pellet3.makeVisible();
+            pellet3.changeColor("white");
+            pellet3.changeSize(10);
+            pellet3.moveHorizontal(130);
+            pellet3.moveVertical(105);
+            
+            powerPellet.makeVisible();
+            powerPellet.changeColor("white");
+            powerPellet.changeSize(25);
+            powerPellet.moveHorizontal(195);
+            powerPellet.moveVertical(175);
+            
+            blinkyBody.makeVisible();
+            blinkyBody.changeColor("red");
+            blinkyBody.changeSize(80);
+            blinkyBody.moveHorizontal(75);
+            blinkyBody.moveVertical(-40);
+            
+            inkyBody.makeVisible();
+            inkyBody.changeColor("cyan");
+            inkyBody.changeSize(80);
+            inkyBody.moveHorizontal(-25);
+            inkyBody.moveVertical(-40);
+            
+            pinkyBody.makeVisible();
+            pinkyBody.changeColor("pink");
+            pinkyBody.changeSize(80);
+            pinkyBody.moveHorizontal(-125);
+            pinkyBody.moveVertical(-40);
+            
+            clydeBody.makeVisible();
+            clydeBody.changeColor("orange");
+            clydeBody.changeSize(80);
+            clydeBody.moveHorizontal(-225);
+            clydeBody.moveVertical(-40);
+            
             
             
             drawn = true;
