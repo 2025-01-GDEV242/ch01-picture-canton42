@@ -8,10 +8,15 @@ import java.util.*;
  * This is a modification of the general purpose Canvas, specially made for
  * the BlueJ "shapes" example. 
  *
+ * EDIT: The setForegroundColor() method has been modified to include the following
+ * new colors: pink, cyan, orange, and pellet.
+ * 
  * @author: Bruce Quig
  * @author: Michael Kšlling (mik)
+ * 
+ * @author: Nolan Canto
  *
- * @version 2016.02.29
+ * @version 2025.02.02
  */
 public class Canvas
 {
@@ -145,6 +150,9 @@ public class Canvas
         }
         else if(colorString.equals("orange")) {
             graphic.setColor(new Color(250, 171, 25));
+        }
+        else if(colorString.equals("pellet")) {
+            graphic.setColor(new Color(250, 177, 132));
         }
         else if(colorString.equals("magenta")) {
             graphic.setColor(Color.magenta);

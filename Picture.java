@@ -1,13 +1,14 @@
 /**
- * This class represents a simple picture. You can draw the picture using
- * the draw method. But wait, there's more: being an electronic picture, it
- * can be changed. You can set it to black-and-white display and back to
- * colors (only after it's been drawn, of course).
- *
- * This class was written as an early example for teaching Java with BlueJ.
+ * This picture depicts the characters seen in the iconic 1980s arcade game,
+ * PAC-MAN. It shows the player-controlled character, PAC-MAN, eating
+ * a few square pellets while being pursued by his four spectral adversaries.
+ * There is also 5 tiny people in the center of the image, depicting the colors of
+ * the characters.
+ * From left to right: PAC-MAN, Blinky (red ghost), Inky (cyan ghost), Pinky
+ * (pink ghost), and Clyde (orange ghost).
  * 
- * @author  Michael Kšlling and David J. Barnes
- * @version 2016.02.29
+ * @author  Nolan Canto
+ * @version 2025.02.02
  */
 public class Picture
 {
@@ -42,6 +43,12 @@ public class Picture
     private Circle clydeEye2;
     private Circle clydePupil1;
     private Circle clydePupil2;
+    
+    private Person person1;
+    private Person person2;
+    private Person person3;
+    private Person person4;
+    private Person person5;
     
     
     private boolean drawn;
@@ -85,6 +92,12 @@ public class Picture
         clydePupil1 = new Circle();
         clydePupil2 = new Circle();
         
+        person1 = new Person();
+        person2 = new Person();
+        person3 = new Person();
+        person4 = new Person();
+        person5 = new Person();
+        
         drawn = false;
     }
 
@@ -107,29 +120,28 @@ public class Picture
             pacMouth.makeVisible();
             
             pellet1.makeVisible();
-            pellet1.changeColor("white");
+            pellet1.changeColor("pellet");
             pellet1.changeSize(10);
             pellet1.moveHorizontal(130);
             pellet1.moveVertical(15);
             
             pellet2.makeVisible();
-            pellet2.changeColor("white");
+            pellet2.changeColor("pellet");
             pellet2.changeSize(10);
             pellet2.moveHorizontal(130);
             pellet2.moveVertical(60);
             
             pellet3.makeVisible();
-            pellet3.changeColor("white");
+            pellet3.changeColor("pellet");
             pellet3.changeSize(10);
             pellet3.moveHorizontal(130);
             pellet3.moveVertical(105);
             
             powerPellet.makeVisible();
-            powerPellet.changeColor("white");
+            powerPellet.changeColor("pellet");
             powerPellet.changeSize(25);
-            powerPellet.moveHorizontal(195);
+            powerPellet.moveHorizontal(201);
             powerPellet.moveVertical(175);
-            
             
             
             blinkyBody.makeVisible();
@@ -254,6 +266,31 @@ public class Picture
             clydePupil2.moveHorizontal(-190);
             clydePupil2.moveVertical(-15);
             
+            
+            person1.makeVisible();
+            person1.changeColor("yellow");
+            person1.changeSize(15,15);
+            
+            person2.makeVisible();
+            person2.changeColor("red");
+            person2.changeSize(15,15);
+            person2.moveHorizontal(-15);
+            
+            person3.makeVisible();
+            person3.changeColor("cyan");
+            person3.changeSize(15,15);
+            person3.moveHorizontal(-30);
+            
+            person4.makeVisible();
+            person4.changeColor("pink");
+            person4.changeSize(15,15);
+            person4.moveHorizontal(-45);
+            
+            person5.makeVisible();
+            person5.changeColor("orange");
+            person5.changeSize(15,15);
+            person5.moveHorizontal(-60);
+            
             drawn = true;
         }
     }
@@ -296,6 +333,12 @@ public class Picture
         clydePupil1.changeColor("white");
         clydePupil2.changeColor("white");
         
+        person1.changeColor("white");
+        person2.changeColor("white");
+        person3.changeColor("white");
+        person4.changeColor("white");
+        person5.changeColor("white");
+        
     }
 
     /**
@@ -306,11 +349,11 @@ public class Picture
         pacBody.changeColor("yellow");
         pacMouth.changeColor("black");
         
-        pellet1.changeColor("white");
-        pellet2.changeColor("white");
-        pellet3.changeColor("white");
+        pellet1.changeColor("pellet");
+        pellet2.changeColor("pellet");
+        pellet3.changeColor("pellet");
         
-        powerPellet.changeColor("white");
+        powerPellet.changeColor("pellet");
         
         blinkyBody.changeColor("red");
         blinkyEye1.changeColor("white");
@@ -335,5 +378,11 @@ public class Picture
         clydeEye2.changeColor("white");
         clydePupil1.changeColor("blue");
         clydePupil2.changeColor("blue");
+        
+        person1.changeColor("yellow");
+        person2.changeColor("red");
+        person3.changeColor("cyan");
+        person4.changeColor("pink");
+        person5.changeColor("orange");
     }
 }
