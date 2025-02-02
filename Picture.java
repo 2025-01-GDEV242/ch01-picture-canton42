@@ -11,12 +11,39 @@
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
-    private Circle sun2;
-    private Triangle mouth;
+    private Circle pacBody;
+    private Triangle pacMouth;
+    
+    private Square pellet1;
+    private Square pellet2;
+    private Square pellet3;
+    private Circle powerPellet;
+    
+    private Circle blinkyBody;
+    private Circle blinkyEye1;
+    private Circle blinkyEye2;
+    private Circle blinkyPupil1;
+    private Circle blinkyPupil2;
+    
+    private Circle pinkyBody;
+    private Circle pinkyEye1;
+    private Circle pinkyEye2;
+    private Circle pinkyPupil1;
+    private Circle pinkyPupil2;
+    
+    private Circle inkyBody;
+    private Circle inkyEye1;
+    private Circle inkyEye2;
+    private Circle inkyPupil1;
+    private Circle inkyPupil2;
+    
+    private Circle clydeBody;
+    private Circle clydeEye1;
+    private Circle clydeEye2;
+    private Circle clydePupil1;
+    private Circle clydePupil2;
+    
+    
     private boolean drawn;
 
     /**
@@ -24,12 +51,40 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
-        sun = new Circle();
-        sun2 = new Circle();
-        mouth = new Triangle();
+        
+        pacBody = new Circle();
+        pacMouth = new Triangle();
+        
+        pellet1 = new Square();
+        pellet2 = new Square();
+        pellet3 = new Square();
+        powerPellet = new Circle();
+        
+        blinkyBody = new Circle();
+        blinkyEye1 = new Circle();
+        blinkyEye2 = new Circle();
+        blinkyPupil1 = new Circle();
+        blinkyPupil2 = new Circle();
+        
+        
+        pinkyBody = new Circle();
+        pinkyEye1 = new Circle();
+        pinkyEye2 = new Circle();
+        pinkyPupil1 = new Circle();
+        pinkyPupil2 = new Circle();
+        
+        inkyBody = new Circle();
+        inkyEye1 = new Circle();
+        inkyEye2 = new Circle();
+        inkyPupil1 = new Circle();
+        inkyPupil2 = new Circle();
+        
+        clydeBody = new Circle();
+        clydeEye1 = new Circle();
+        clydeEye2 = new Circle();
+        clydePupil1 = new Circle();
+        clydePupil2 = new Circle();
+        
         drawn = false;
     }
 
@@ -39,37 +94,24 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
-            
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
     
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
-    
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
+            pacBody.changeColor("yellow");
+            pacBody.moveHorizontal(100);
+            pacBody.moveVertical(-40);
+            pacBody.changeSize(80);
+            pacBody.makeVisible();
             
-            sun2.changeColor("magenta");
-            sun2.moveHorizontal(-200);
-            sun2.moveVertical(-70);
-            sun2.makeVisible();
+            pacMouth.changeColor("black");
+            pacMouth.moveHorizontal(160);
+            pacMouth.moveVertical(-50);
+            pacMouth.makeVisible();
             
-            mouth.changeColor("black");
-            mouth.moveHorizontal(160);
-            mouth.moveVertical(-50);
-            mouth.makeVisible();
+            pellet1.makeVisible();
+            pellet1.changeColor("white");
+            pellet1.changeSize(10);
+            pellet1.moveHorizontal(160);
+            pellet1.moveVertical(-80);
+            
             
             drawn = true;
         }
@@ -80,10 +122,8 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
+        pacBody.changeColor("white");
+        pacMouth.changeColor("black");
     }
 
     /**
@@ -91,9 +131,7 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        sun.changeColor("yellow");
+        pacBody.changeColor("yellow");
+        pacMouth.changeColor("black");
     }
 }
