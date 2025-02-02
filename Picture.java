@@ -130,11 +130,37 @@ public class Picture
             powerPellet.moveHorizontal(195);
             powerPellet.moveVertical(175);
             
+            
+            
             blinkyBody.makeVisible();
             blinkyBody.changeColor("red");
             blinkyBody.changeSize(80);
             blinkyBody.moveHorizontal(75);
             blinkyBody.moveVertical(-40);
+            
+            blinkyEye1.makeVisible();
+            blinkyEye1.changeColor("white");
+            blinkyEye1.changeSize(25);
+            blinkyEye1.moveHorizontal(125);
+            blinkyEye1.moveVertical(-20);
+            
+            blinkyEye2.makeVisible();
+            blinkyEye2.changeColor("white");
+            blinkyEye2.changeSize(25);
+            blinkyEye2.moveHorizontal(100);
+            blinkyEye2.moveVertical(-20);
+            
+            blinkyPupil1.makeVisible();
+            blinkyPupil1.changeColor("blue");
+            blinkyPupil1.changeSize(15);
+            blinkyPupil1.moveHorizontal(135);
+            blinkyPupil1.moveVertical(-15);
+            
+            blinkyPupil2.makeVisible();
+            blinkyPupil2.changeColor("blue");
+            blinkyPupil2.changeSize(15);
+            blinkyPupil2.moveHorizontal(110);
+            blinkyPupil2.moveVertical(-15);
             
             inkyBody.makeVisible();
             inkyBody.changeColor("cyan");
@@ -142,11 +168,61 @@ public class Picture
             inkyBody.moveHorizontal(-25);
             inkyBody.moveVertical(-40);
             
+            inkyEye1.makeVisible();
+            inkyEye1.changeColor("white");
+            inkyEye1.changeSize(25);
+            inkyEye1.moveHorizontal(25);
+            inkyEye1.moveVertical(-20);
+            
+            inkyEye2.makeVisible();
+            inkyEye2.changeColor("white");
+            inkyEye2.changeSize(25);
+            inkyEye2.moveHorizontal(0);
+            inkyEye2.moveVertical(-20);
+            
+            inkyPupil1.makeVisible();
+            inkyPupil1.changeColor("blue");
+            inkyPupil1.changeSize(15);
+            inkyPupil1.moveHorizontal(35);
+            inkyPupil1.moveVertical(-15);
+            
+            inkyPupil2.makeVisible();
+            inkyPupil2.changeColor("blue");
+            inkyPupil2.changeSize(15);
+            inkyPupil2.moveHorizontal(10);
+            inkyPupil2.moveVertical(-15);
+            
+            
             pinkyBody.makeVisible();
             pinkyBody.changeColor("pink");
             pinkyBody.changeSize(80);
             pinkyBody.moveHorizontal(-125);
             pinkyBody.moveVertical(-40);
+            
+            pinkyEye1.makeVisible();
+            pinkyEye1.changeColor("white");
+            pinkyEye1.changeSize(25);
+            pinkyEye1.moveHorizontal(-75);
+            pinkyEye1.moveVertical(-20);
+            
+            pinkyEye2.makeVisible();
+            pinkyEye2.changeColor("white");
+            pinkyEye2.changeSize(25);
+            pinkyEye2.moveHorizontal(-100);
+            pinkyEye2.moveVertical(-20);
+            
+            pinkyPupil1.makeVisible();
+            pinkyPupil1.changeColor("blue");
+            pinkyPupil1.changeSize(15);
+            pinkyPupil1.moveHorizontal(-65);
+            pinkyPupil1.moveVertical(-15);
+            
+            pinkyPupil2.makeVisible();
+            pinkyPupil2.changeColor("blue");
+            pinkyPupil2.changeSize(15);
+            pinkyPupil2.moveHorizontal(-90);
+            pinkyPupil2.moveVertical(-15);
+            
             
             clydeBody.makeVisible();
             clydeBody.changeColor("orange");
@@ -154,7 +230,29 @@ public class Picture
             clydeBody.moveHorizontal(-225);
             clydeBody.moveVertical(-40);
             
+            clydeEye1.makeVisible();
+            clydeEye1.changeColor("white");
+            clydeEye1.changeSize(25);
+            clydeEye1.moveHorizontal(-175);
+            clydeEye1.moveVertical(-20);
             
+            clydeEye2.makeVisible();
+            clydeEye2.changeColor("white");
+            clydeEye2.changeSize(25);
+            clydeEye2.moveHorizontal(-200);
+            clydeEye2.moveVertical(-20);
+            
+            clydePupil1.makeVisible();
+            clydePupil1.changeColor("blue");
+            clydePupil1.changeSize(15);
+            clydePupil1.moveHorizontal(-165);
+            clydePupil1.moveVertical(-15);
+            
+            clydePupil2.makeVisible();
+            clydePupil2.changeColor("blue");
+            clydePupil2.changeSize(15);
+            clydePupil2.moveHorizontal(-190);
+            clydePupil2.moveVertical(-15);
             
             drawn = true;
         }
