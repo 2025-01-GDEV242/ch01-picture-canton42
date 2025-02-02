@@ -265,6 +265,37 @@ public class Picture
     {
         pacBody.changeColor("white");
         pacMouth.changeColor("black");
+        
+        pellet1.changeColor("white");
+        pellet2.changeColor("white");
+        pellet3.changeColor("white");
+        
+        powerPellet.changeColor("white");
+        
+        blinkyBody.changeColor("white");
+        blinkyEye1.changeColor("black");
+        blinkyEye2.changeColor("black");
+        blinkyPupil1.changeColor("white");
+        blinkyPupil2.changeColor("white");
+        
+        inkyBody.changeColor("white");
+        inkyEye1.changeColor("black");
+        inkyEye2.changeColor("black");
+        inkyPupil1.changeColor("white");
+        inkyPupil2.changeColor("white");
+        
+        pinkyBody.changeColor("white");
+        pinkyEye1.changeColor("black");
+        pinkyEye2.changeColor("black");
+        pinkyPupil1.changeColor("white");
+        pinkyPupil2.changeColor("white");
+        
+        clydeBody.changeColor("white");
+        clydeEye1.changeColor("black");
+        clydeEye2.changeColor("black");
+        clydePupil1.changeColor("white");
+        clydePupil2.changeColor("white");
+        
     }
 
     /**
@@ -274,5 +305,35 @@ public class Picture
     {
         pacBody.changeColor("yellow");
         pacMouth.changeColor("black");
+        
+        pellet1.changeColor("white");
+        pellet2.changeColor("white");
+        pellet3.changeColor("white");
+        
+        powerPellet.changeColor("white");
+        
+        blinkyBody.changeColor("red");
+        blinkyEye1.changeColor("white");
+        blinkyEye2.changeColor("white");
+        blinkyPupil1.changeColor("blue");
+        blinkyPupil2.changeColor("blue");
+        
+        inkyBody.changeColor("cyan");
+        inkyEye1.changeColor("white");
+        inkyEye2.changeColor("white");
+        inkyPupil1.changeColor("blue");
+        inkyPupil2.changeColor("blue");
+        
+        pinkyBody.changeColor("pink");
+        pinkyEye1.changeColor("white");
+        pinkyEye2.changeColor("white");
+        pinkyPupil1.changeColor("blue");
+        pinkyPupil2.changeColor("blue");
+        
+        clydeBody.changeColor("orange");
+        clydeEye1.changeColor("white");
+        clydeEye2.changeColor("white");
+        clydePupil1.changeColor("blue");
+        clydePupil2.changeColor("blue");
     }
 }
